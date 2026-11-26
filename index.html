@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Barroco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>El Arte Barroco</h1>
+
+    <p class="intro">
+      Holi, si quieren saber sobre este tipo de arte hagan clic en las preguntas para tener la respuesta :D
+    </p>
+
+    <button class="pregunta" onclick="mostrar('r1')">
+        ¿Por qué surgió el Barroco?
+    </button>
+
+    <div class="respuesta" id="r1">
+        <img src="https://historia-arte.com/_/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpbSI6WyJcL3JlcG9ydGFnZVwvaW1hZ2VGaWxlXC9sYXMtbWVuaW5hcy12ZWxhenF1ZXouanBnIiwicmVzaXplLDg4MCw4ODAiXX0.agP3QiVPi9BWLBYYsTjIyPtCukrDT9OqCmA312fG6Lk.jpg" alt="Las meninas">
+        <p>
+            El Barroco fue un movimiento cultural y artistico el cual surgió a fines del siglo XVI como respuesta a la Contrarreforma de la Iglesia Católica y a los cambios políticos y sociales que atravesaba Europa. Paulatinamente, se fue expandiendo hasta America, mas especificamente hacia Iberoamerica.
+        </p>
+    </div>
+
+    <button class="pregunta" onclick="mostrar('r2')">
+        ¿Qué efecto tuvo?
+    </button>
+
+    <div class="respuesta" id="r2">
+        <img src="https://lavozhumanista.wordpress.com/wp-content/uploads/2018/06/apolo1.jpg?w=640" alt="Escultura barroca">
+        <p>
+            Influyó en la pintura, la arquitectura, la música, la literatura y la escultura. Buscaba emocionar al espectador con obras impactantes y llenas de detalles.
+        </p>
+    </div>
+
+    <button class="pregunta" onclick="mostrar('r3')">
+        ¿Cuáles fueron sus características?
+    </button>
+
+    <div class="respuesta" id="r3">
+        <img src="https://lh3.googleusercontent.com/OLo_Itwvqq1j2ylJsGn1VvqRtIrqmPC-FQUJ2mbkKEKudUAc0iu0b4yuwqWvN5eCZ1bA0SkUBwZ7y_Jl8rY3z5OSYCrRnZOw9MAB3WAHZedlVm0a6ohyDITDx5KQXJlU7ywfyscu" alt="La vocación de San Mateo">
+        <p>
+             Se caracteriza por el exceso de ornamentación, el dramatismo, la tensión y la búsqueda de emociones intensas, alejándose de la sobriedad y el equilibrio del Renacimiento. 
+        </p>
+    </div>
+
+    <button class="pregunta" onclick="mostrar('r4')">
+        ¿Quiénes fueron los artistas más importantes?
+    </button>
+
+    <div class="respuesta" id="r4">
+        <img src="https://uploads0.wikiart.org/images/peter-paul-rubens.jpg!Portrait.jpg" alt="Rubens">
+        <p>
+            Entre los artistas más importantes se encuentran Caravaggio, Diego Velázquez, Rembrandt, Rubens y Bernini.
+        </p>
+    </div>
+
+    <button class="pregunta" onclick="mostrar('r5')">
+        ¿Cuál fue el legado del Barroco?
+    </button>
+
+    <div class="respuesta" id="r5">
+        <img src="https://aulasvirtuales.udistrital.edu.co/pluginfile.php/235761/mod_book/chapter/683/Arte-Barroco-Resumen.jpg" alt="Iglesia">
+        <p>
+            El Barroco dejó una gran influencia en el arte occidental. Muchas iglesias, esculturas y pinturas barrocas siguen siendo admiradas en la actualidad.
+        </p>
+    </div>
+
+</div>
+
+<script>
+function mostrar(id){
+
+    let respuesta = document.getElementById(id);
+
+    if(respuesta.style.display === "block"){
+        respuesta.style.display = "none";
+    }else{
+        respuesta.style.display = "block";
+    }
+
+}
+</script>
+
+</body>
+</html>
